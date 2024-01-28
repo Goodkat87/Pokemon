@@ -1,0 +1,62 @@
+section
+    width: 100%
+    height: 100%
+    display: flex
+    .sides
+        width: 25%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            height: 30%
+            width: 100%
+    #center
+        width: 50%
+        height: 100%
+        background-image: url(./../../src/img/DS.png)
+        background-size: cover
+        background-position: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        #start
+            height: 37%
+            width: 46.5%
+            margin-top: 35px
+            margin-left: 6px
+            border-radius: 3px
+        #menu
+            height: 37%
+            width: 46.5%
+            margin-bottom: 45px
+            border-radius: 3px
+            position: relative
+            z-index: -1
+        #buttonstart
+            position: absolute
+            color: red 
+            z-index: 1
+            top: 80%
+            font-size: 35px
+            animation: start 1s ease infinite
+            cursor: pointer
+
+@keyframes start 
+    0%
+        color: transparent
+    50%
+        color: red
+    100%
+        color: transparent
+
+
+
+
+
+            
+                
+
+
+        

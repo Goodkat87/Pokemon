@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+section .sides {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .sides img {
+  height: 30%;
+  width: 100%;
+}
+section #center {
+  width: 50%;
+  height: 100%;
+  background-image: url(./../../src/img/DS.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+section #center #start {
+  height: 37%;
+  width: 46.5%;
+  margin-top: 35px;
+  margin-left: 6px;
+  border-radius: 3px;
+}
+section #center #menu {
+  height: 37%;
+  width: 46.5%;
+  margin-bottom: 45px;
+  border-radius: 3px;
+  position: relative;
+  z-index: -1;
+}
+section #center #buttonstart {
+  position: absolute;
+  color: red;
+  z-index: 1;
+  top: 80%;
+  font-size: 35px;
+  animation: start 1s ease infinite;
+  cursor: pointer;
+}
+
+@keyframes start {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: transparent;
+  }
+}
+#fight {
+  height: 37%;
+  width: 46.5%;
+  margin-top: 35px;
+  margin-left: 6px;
+  border-radius: 3px;
+  background-image: url(./../../src/img/Arena.webp);
+  display: flex;
+}
+#fight #poke1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#fight #poke1 img {
+  height: 100px;
+}
+#fight #poke2 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#fight #poke2 img {
+  height: 100px;
+}
+
+#container {
+  height: 37%;
+  width: 46.5%;
+  margin-bottom: 45px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+#container div {
+  height: 70%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+#container div button {
+  cursor: pointer;
+  border-radius: 10px;
+  height: 50%;
+  width: 50%;
+}
+#container p {
+  margin: 0;
+  padding: 0;
+  height: 30%;
+  width: 99%;
+  background-color: lightgrey;
+  border: 2px black solid;
+  border-radius: 0 0 10px 10px;
+}
+
+#center #containerB {
+  height: 37%;
+  width: 46.5%;
+  margin-bottom: 45px;
+  border-radius: 3px;
+  background-color: black;
+  display: flex;
+}
+#center #containerB div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#center #containerB div p {
+  animation: names 2s ease infinite;
+  font-size: 20px;
+  color: white;
+  cursor: context-menu;
+}
+#center #containerB div img {
+  cursor: pointer;
+}
+#center #choose {
+  height: 80px;
+  width: 300px;
+  margin-top: 140px;
+  margin-left: 6px;
+  border-radius: 3px;
+}
+
+@keyframes names {
+  0%, 100% {
+    color: #FF36DE;
+  }
+  50% {
+    color: #00FFEF;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
